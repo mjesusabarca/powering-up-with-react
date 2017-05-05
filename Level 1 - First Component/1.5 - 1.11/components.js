@@ -13,7 +13,7 @@ class RobotBox extends React.Component {
                     <h3>Tópicos que estou interessado</h3>
                     /* Aqui estou listando de maneira dinâmica, ao usar o método map() */
                     <ul>
-                        { topics.map( top => <li>{top}</li>) }
+                        { topics.map( top => <li>{top}</li>) } /* {topics.map( topic => <li>{topic}</li> )} */
                     </ul>
             </div>
         );
@@ -21,6 +21,7 @@ class RobotBox extends React.Component {
 }
 
 /* Aqui iremos renderizar o nosso component para a página HTML - Virtual DOM */
+/* {topics.map( topic => <li>{topic}</li> )}  en español top = topic */
 let target = document.getElementById('robot-app');
 
 ReactDOM.render( <RobotBox />, target);
